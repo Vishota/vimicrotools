@@ -1,0 +1,1 @@
+export declare function checkKeys<T extends Record<K, any>, const K extends string, const P extends string | never>(target: T, required: K[], possible?: Exclude<P, K>[]): Record<K, T[keyof T]> & Partial<Record<P, T[keyof T]>>;
